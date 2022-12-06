@@ -15,6 +15,6 @@ if [ $input ]; then
 else
     git commit -am "Auto Submission"
 fi
-git push origin master
+git push origin main
 
 echo "--------End--------"
