@@ -4,7 +4,7 @@ sleep 2
 
 echo "-------Begin-------"
 if [ ! $1 ]; then
-    read -r -p "Please input your Video commit message: " input
+    read -r -p "Please input your commit message: " input
 else
     input=$1
 fi
