@@ -1,6 +1,6 @@
   
 ### Lazy loading and Anonymous function 
-In Swift, we use the lazy keyword before the property to simply implement delayed loading, for example,
+In Swift, we use the lazy keyword before the property to simply implement delayed loading, for example:
 
 ```Swift 
 lazy var str: String = {
