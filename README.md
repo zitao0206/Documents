@@ -1,12 +1,12 @@
 
 # For Swift
 
-## Swift Tips <https://github.com/Leon0206/Documents/blob/main/Swift/Tips.md>
+## [Swift Tips](https://github.com/Leon0206/Documents/blob/main/Swift/Tips.md)
 * Lazy loading and Anonymous function 
 * 
-## Closures
+## [Closures](https://github.com/Leon0206/Documents/blob/main/Swift/Closures.md)
 
-## Protocols
+## [Protocols](https://github.com/Leon0206/Documents/blob/main/Swift/Protocols.md)
 
 
 # For Objective-C
