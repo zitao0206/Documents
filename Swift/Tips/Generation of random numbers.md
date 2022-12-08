@@ -1,5 +1,7 @@
   
-### Generation of random numbers
+<font color=gray size=2>*It will take about 3 minutes to finish reading this article.*</font>
+
+# **<font size=5 >Generation of random numbers</font>**
 In Swift, we can still use the ** arc4random ** method to obtain random numbers. However, it should be noted that:
 > Arc4random() uses the key stream generator encrypted by Arc4 password to generate a random number in the interval [0, 2 ^ 32). The return type of this function is always UInt32.
 

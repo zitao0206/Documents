@@ -1,5 +1,8 @@
   
-### Lazy loading and Anonymous function 
+<font color=gray size=2>*It will take about 1 minutes to finish reading this article.*</font>
+
+# **<font size=5 >Lazy loading and Anonymous function</font>**
+
 In Swift, we use the lazy keyword before the property to simply implement delayed loading, for example:
 
 ```Swift 
