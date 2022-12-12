@@ -11,6 +11,7 @@
  
 1.1 杭州 
 
+<strong> Example Code </strong>
 ```Swift 
 let faceCount = 6
 let randomResult = Int(arc4random()) % faceCount + 1

@@ -1,0 +1,61 @@
+
+<font color=gray size=2>*It will take about 3 minutes to finish reading this article.*</font>
+
+# **<font size=5 >Handling of errors and exceptions</font>**
+ 
+
+## **<font size=3 >1. Handlings of Objective-C </font>**
+ 
+ 
+In Objective-C, we often write code like this:
+```Swift 
+NSError *error;
+BOOL success = [data writeToFile: path options: options error: &error];
+if(error) {
+// something happens
+}
+```
+That is a very good method to handle possible errors. However we often simply this code like this:
+```Swift 
+[data writeToFile: path options: options error: nil];
+```
+We set varaible error to nil, Maybe we don't care about this error when we are developing. Howwever this method can report errors, for example, the space of the device' disk is full, you will write unsuccessfully, and this error will not be found easily.
+
+## **<font size=3 >2. Handlings of Swift</font>**
+In Swift, we don't need to write an pointer variable error that waiting to be written by called method. we can use 'try catch' to take place of it. 
+```Swift
+do {
+    try d.write(toFile: "Hello", options: [])
+} catch let error as NSError {
+    print ("Error: \(error.domain)")
+}
+```
+
+It is a very common to use 'try catch' to hand errors and exceptions in Swift. The sample code is as follows.
+```Swift 
+enum LoginError: Error {
+    case UserNotFound, UserPasswordNotMatch
+}
+
+func login(user: String, password: String) throws {
+    if !users.keys.contains(user) {
+        throw LoginError.UserNotFound
+    }
+    if users[user] != password {
+        throw LoginError.UserPasswordNotMatch
+    }
+    print("Login successfully.")
+}
+// call
+let users:[String:String] = ["liyao":"One", "tom":"Two", "lzt":"Three"]
+do {
+    try login(user: "ll", password: "234")
+} catch LoginError.UserNotFound {
+    print("UserNotFound")
+} catch LoginError.UserPasswordNotMatch {
+    print("UserPasswordNotMatch")
+} catch {
+    //default handling, don't delete it, or it would report an error.
+}
+
+

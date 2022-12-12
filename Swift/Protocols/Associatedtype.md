@@ -1,5 +1,5 @@
   
-<font color=gray size=2>*It will take about 1 minutes to finish reading this article.*</font>
+<font color=gray size=2>*It will take about 3 minutes to finish reading this article.*</font>
 
 # **<font size=5 >Summary of the keyword 'associatedtype'</font>**
 
@@ -27,32 +27,8 @@ protocol Stackble {
     func size() ->Int
 }
 ```
-Associated types can be applied in situations as follow.
-## **<font size=3 >1. Associated type be replaced by generic type </font>**
-In a class with generics, generic types replace association types.
-
-<strong> Example Code </strong>
-```Swift 
-class Stack <E>: Stackble {
-    //typealias E = Element
-    var elements = [E]()  
-     func push(_ element:E) {   
-        elements.append(element)
-    }
-     func pop()->E{
-        elements.removeLast()
-    }
-    func top() ->E{
-        elements.last!
-    }
-    func size() ->Int{
-        elements.count
-    }
-}
-```
-Thanks to Swift’s type inference, we don’t actually need to declare a concrete Element of Int as part of the definition of IntStack. 
-
-## **<font size=3 >2. Associated type be replaced by concrete type </font>**
+Associated types can be applied in situations as follows:
+## **<font size=3 >1. Associated type be replaced by concrete type </font>**
  
 <strong> Example Code </strong>
 ```Swift 
@@ -74,8 +50,32 @@ class StringStack:Stackble {
     }
 }
 ```
+Thanks to Swift’s type inference, we don’t actually need to declare a concrete Element of String as part of the definition of StringStack. 
 
-## **<font size=3 >3. Points fot Attention </font>**
+## **<font size=3 >2. Associated type be replaced by generic type </font>**
+In a class with generics, generic types replace association types.
+
+<strong> Example Code </strong>
+```Swift 
+class Stack <E>: Stackble {
+    //typealias E = Element
+    var elements = [E]()  
+     func push(_ element:E) {   
+        elements.append(element)
+    }
+     func pop()->E{
+        elements.removeLast()
+    }
+    func top() ->E{
+        elements.last!
+    }
+    func size() ->Int{
+        elements.count
+    }
+}
+```
+
+## **<font size=3 >3. Points for Attention </font>**
 
 A protocol contains associated types cannot be used as return values and function parameters.
 ```Swift 
