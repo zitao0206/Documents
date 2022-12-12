@@ -19,7 +19,7 @@ That is a very good method to handle possible errors. However we often simply th
 ```Swift 
 [data writeToFile: path options: options error: nil];
 ```
-We set varaible error to nil, Maybe we don't care about this error when we are developing. Howwever this method can report errors, for example, the space of the device' disk is full, you will write unsuccessfully, and this error will not be found easily.
+We set varaible error to nil, Maybe we don't care about this error when we are developing. However this method can report errors, for example,if the space of the device' disk is full, you will write unsuccessfully, and this error can't not be found easily becase of our laziness.
 
 ## **<font size=3 >2. Handlings of Swift</font>**
 In Swift, we don't need to write an pointer variable error that waiting to be written by called method. we can use 'try catch' to take place of it. 
@@ -47,7 +47,7 @@ func login(user: String, password: String) throws {
     print("Login successfully.")
 }
 // call
-let users:[String:String] = ["liyao":"One", "tom":"Two", "lzt":"Three"]
+let users:[String:String] = ["liudehua":"One", "wanggang":"Two", "liming":"Three"]
 do {
     try login(user: "ll", password: "234")
 } catch LoginError.UserNotFound {
