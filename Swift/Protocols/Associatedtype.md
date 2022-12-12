@@ -136,6 +136,9 @@ func get<T:Runnable>(_ type:Int)-> T {
 }
 ```
 
+<font color=gray size=2>*Reference Resources:*</font>   
+https://docs.swift.org/swift-book/LanguageGuide/Generics.html
+https://blog.csdn.net/boildoctor/article/details/113116245
 
 
 
