@@ -6,7 +6,6 @@ In Swift, Structures is general-purpose, flexible constructs that become the bui
 We can define attributes (constants, variables) and add methods for the structure to extend its functions.
 
 ## **<font size=3 >1. Structure supports property defaults and initialization constructors</font>**
-***
 <details>
   <summary>Details</summary>
  We often use the following methods to initialize in OC.
@@ -90,7 +89,6 @@ let ret = SwiftDemoModel(b: "b1")
 
 
 ## **<font size=3 >2. Second Title</font>**
-***
  + 第一项
  + 第二项
  + 第三项
