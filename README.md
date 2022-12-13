@@ -6,7 +6,7 @@
 * 
 ### [Closures](https://github.com/Leon0206/Documents/blob/main/Swift/Closures.md)
 
-### [Protocols](https://github.com/Leon0206/Documents/blob/main/Swift/Protocols.md)
+### [Protocols](https://github.com/Leon0206/Documents/tree/main/Swift/Protocols)
 
 
 ## For Objective-C
