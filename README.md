@@ -15,6 +15,9 @@
 
 ### [Closures](https://github.com/Leon0206/Documents/tree/main/Swift/Protocols)
 
+### [Collections](https://github.com/Leon0206/Documents/tree/main/Swift/Ops%20For%20Collections)
+* [Zip Function](https://github.com/Leon0206/Documents/blob/main/Swift/Ops%20For%20Collections/Zip%20Function.md)
+  
 ## For Objective-C
 
 ## For iOS

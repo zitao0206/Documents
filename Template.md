@@ -25,6 +25,6 @@ let randomResult = Int(arc4random()) % faceCount + 1
 
 </details>
 
-## **<font size=3 >3. Reference Documents</font>**
-* [Generation of random numbers](https://www.baidu.com/)
-* <https://www.runoob.com>
+## **<font color=gray size=3 >*Reference Documents*</font>**
+<https://blog.csdn.net/mo_xiao_mo/article/details/78424769>
+<https://www.runoob.com>
