@@ -7,6 +7,19 @@
 * [Lazy loading and Anonymous function](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Lazy%20loading%20and%20Anonymous%20function.md)
 * [NSString and String](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/NSString%20and%20String.md)
 * [Set Read-only permission of the property](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Set%20Read-only%20permission%20of%20the%20property.md)
+* [Computed properties and Stored properties](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Computed%20properties%20and%20Stored%20properties.md)
+* [How to Define a singleton?](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Define%20a%20singleton.md)
+
+
+
+
+
+### [Enumerations](https://github.com/Leon0206/Documents/tree/main/Swift/Enumerations)
+* [Summary of Enumerations](https://github.com/Leon0206/Documents/blob/main/Swift/Enumerations/Summary%20of%20Enumerations.md)
+* [Recursive Enumeration](https://github.com/Leon0206/Documents/blob/main/Swift/Enumerations/Recursive%20Enumeration.md)
+* [Nested Enumeration](https://github.com/Leon0206/Documents/blob/main/Swift/Enumerations/Nested%20Enumeration.md)
+* [Include Enumeration](https://github.com/Leon0206/Documents/blob/main/Swift/Enumerations/Include%20Enumeration.md)
+
 
 
 ### [Structs](https://github.com/Leon0206/Documents/tree/main/Swift/Structs)

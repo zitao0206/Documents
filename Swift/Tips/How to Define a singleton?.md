@@ -1,7 +1,7 @@
 
 <font color=gray size=2>*It will take about 1 minutes to finish reading this article.*</font>
 
-# **<font size=5 color=#FFFFFF>Define a singleton</font>**
+# **<font size=5 color=#FFFFFF>How to Define a singleton?</font>**
 
 We can define a singleton in OC like this:
 ```Swift
