@@ -8,7 +8,7 @@
 * [NSString and String](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/NSString%20and%20String.md)
 * [Set Read-only permission of the property](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Set%20Read-only%20permission%20of%20the%20property.md)
 * [Computed properties and Stored properties](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Computed%20properties%20and%20Stored%20properties.md)
-* [How to Define a singleton?](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Define%20a%20singleton.md)
+* [How to Define a singleton?](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/How%20to%20Define%20a%20singleton%3F.md)
 
 
 
