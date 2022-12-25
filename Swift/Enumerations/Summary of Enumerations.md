@@ -1,0 +1,171 @@
+
+<font color=gray size=2>*It will take about 3 minutes to finish reading this article.*</font>
+
+# **<font size=5 color=#FFFFFF>Summary of Enumerations</font>**
+ 
+
+## **<font size=4 color=#F8F8FF>1. General</font>**
+ 
+We define an enumeration in Objective-C/C as follow:
+```Objective-C
+typedef enum {
+    AFEncapsulationBoundaryPhase = 1,
+    AFHeaderPhase                = 2,
+    AFBodyPhase                  = 3,
+    AFFinalBoundaryPhase         = 4,
+} AFHTTPBodyPartReadPhase;
+```
+Or like this:
+```Objective-C
+typedef NS_ENUM(NSInteger, RoleItemType) {
+    RoleItemLabelType = 0,  
+    RoleItemImageType = 1,   
+    RoleItemMixType = 2,     
+};
+```
+But In Swift we need to define an enumeration like this:
+```Swift 
+enum CompassPoint {
+    case north
+    case south
+    case east
+    case west
+}
+```
+Unlike in C/OC, enumeration in Swift is a completely different thing. It is somewhat similar to struct. It is very flexible and has a wide range of uses. Enumeration in Swift has the following characteristics:  
+> * It is of value type.
+> * It can conform to protocols to provide standard functionality.
+> * It can be extended to expand their functionality beyond their original implementation.
+> * It can also define initializers to provide an initial case value and define common functions and properties(computed properties).   
+> * It supports recursion.
+
+Enumerations in Swift are first-class types in their own right. They adopt many features traditionally supported only by classes.
+ 
+
+## **<font size=4 color=#F8F8FF>2. Associated Values and Raw Values</font>**
+
+<strong>**<font size=3 color=#F5F5F5>2.1 Associated Values</font>**  </strong>
+
+Firstly, Associated Values can have different member types. for example:
+```Swift
+ enum {10,0.8,"Hello"}
+```
+Secondly, It always bases on Constant or variable. Thirdly, Associated Value will be set when you create a new constant or variable based on the enumeration member, and its value can be different each time you do so.
+```Swift
+enum Student{
+    case Name(String)
+    case Mark(Int,Int,Int)
+}
+var studDetails = Student.Name("Runoob")
+var studMarks = Student.Mark(98,97,95)
+switch studMarks {
+case .Name(let studName):
+    print("Student Name: \(studName)。")
+case .Mark(let Mark1, let Mark2, let Mark3):
+    print("Student Mark: \(Mark1),\(Mark2),\(Mark3)。")
+}
+```
+<strong>**<font size=3 color=#F5F5F5>2.2 Raw Values</font>**  </strong>   
+Firstly, Raw Values have the same member types. for example:
+```Swift
+enum {10,35,50}
+```
+It is pre-populated values and fixed.
+```Swift 
+enum ASCIIControlCharacter: Character {
+    case tab = "\t"
+    case lineFeed = "\n"
+    case carriageReturn = "\r"
+}
+```
+> NOTE  
+> Raw values are not the same as associated values. Raw values are set to prepopulated values when you first define the enumeration in your code, like the three ASCII codes above. The raw value for a particular enumeration case is always the same. Associated values are set when you create a new constant or variable based on one of the enumeration’s cases, and can be different each time you do so.
+>
+
+Usually, An enumeration that has Declaration Type can be implicitly assigned and you do not need write them all, for example:
+```Swift
+enum Month: Int {
+    case January = 1, February, March, April, May, June, July, August, September, October, November, December
+}
+
+```
+
+## **<font size=4 color=#F8F8FF>3. Add methods and properties to enumerations</font>**
+```Swift
+enum Device : Int {
+    case iPhone4s
+    case iPhone5
+    case iPhone6
+    case iPhone7
+    var introduced: Int {
+            switch self {
+            case .iPhone4s: return 2011
+            case .iPhone5: return 2012
+            case .iPhone6: return 2014
+            case .iPhone7: return 2016
+        }
+    }
+}
+let device = Device.iPhone5
+print(device.introduced)
+/*result:
+2012
+*/
+```
+We try to extend this enumeration as follows:
+```Swift
+extension Device {
+    func detailedIntroduced()  {
+            switch self {
+            case .iPhone4s: print("published in 2011")
+            case .iPhone5: print("published in 2012")
+            case .iPhone6: print("published in 2014")
+            case .iPhone7: print("published in 2016")
+        }
+    }
+}
+let device = Device.iPhone5
+device.detailedIntroduced()
+/* result:
+published in 2012
+*/
+```
+
+## **<font size=4 color=#F8F8FF>4. Enumeration and Protocol</font>**
+Enumeration can conform to protocols to provide standard functionality.
+
+```Swift
+enum Beverage: CaseIterable {
+    case coffee, tea, juice
+}
+let numberOfChoices = Beverage.allCases.count
+for beverage in Beverage.allCases {
+    print(beverage)
+}
+```
+
+## **<font size=4 color=#F8F8FF>5. Enumeration and Generics</font>**
+A typical example of the application of enumerations in generics is 'Optional'. 'Optional' is an enumeration like that:
+```Swift
+enum Optional<T> {
+  case Some(T)
+  case None
+}
+```
+Enumeration can have multiple generic parameters, for example:
+```Swift
+enum Either<T1, T2> {
+  case Left(T1)
+  case Right(T2)
+}
+```
+
+## **<font color=gray size=3 >*Reference Documents*</font>**
+<https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html>
+<https://www.jianshu.com/p/6f5f7a908301>   
+<https://juejin.cn/post/7053223443046596644>
+
+
+
+
+
