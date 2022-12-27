@@ -1,0 +1,132 @@
+
+<font color=gray size=2>*It will take about 3 minutes to finish reading this article.*</font>
+
+# **<font size=5 color=#FFFFFF>Capturing Values</font>**   
+<font size=2 color=#4169E1>1. The capture of values in OC.</font>   
+<font size=2 color=#4169E1>2. The capture of values in Swift.</font>   
+<font size=2 color=#4169E1>3. Modify value in closure.</font>      
+<font size=2 color=#4169E1>4. Capturing list in closure.</font>    
+
+
+The capture of values in Swift's closure and OC's Block is different.
+
+### <font size=3 color=#4169E1>**1. The capture of values in OC.**</font> 
+```Swift 
+NSInteger a = 100;
+void(^block)(void) = ^{
+    NSLog(@"block = %ld:", a);
+};
+ 
+a += 1;
+NSLog(@"out1 = %ld:", a);
+block();
+NSLog(@"out2 = %ld:", a);
+//result:
+2021-08-17 11:27:13.846743+0800 MDProject[30746:23593763] out1 = 101
+2021-08-17 11:27:13.846885+0800 MDProject[30746:23593763] block = 100
+2021-08-17 11:27:13.847002+0800 MDProject[30746:23593763] out2 = 101
+```
+### <font size=3 color=#4169E1>**2. The capture of values in Swift.**</font> 
+```Swift
+var a = 100
+let closure = {
+    print("closure = \(a)")
+}
+a += 1
+print("out 1 = \(a)")
+closure()
+print("out 2 = \(a)")
+```
+Result:
+```Swift
+out1 = 101
+closure = 101
+out 2 = 101
+```
+Swift closures capture "references", not the objects they reference. We can print the address of variable a to prove this.
+```Swift
+var a = 100
+withUnsafePointer(to: &a) {ptr in print(ptr)}
+let closure = {
+    print("closure = \(a)")
+    withUnsafePointer(to: &a) {ptr in print(ptr)}
+}
+closure()
+a += 1
+print("out 1 = \(a)")
+withUnsafePointer(to: &a) {ptr in print(ptr)}
+
+closure()
+print("out 2 = \(a)")
+withUnsafePointer(to: &a) {ptr in print(ptr)}
+```
+Result as follows:
+```Swift
+0x0000600000209490
+closure = 100
+0x0000600000209490
+out 1 = 101
+0x0000600000209490
+closure = 101
+0x0000600000209490
+out 2 = 101
+0x0000600000209490
+```
+They all have the same address, It proves that closure capture the reference of the variable, not like block in OC.
+
+### <font size=3 color=#4169E1>**3. Modify value in closure.**</font>  
+If we want to modity value in block, we should add "__block" or "__weak", that will make the block capture reference of variable from outside.
+Let me see how closure handle this case.
+```Swift
+var a = 100
+let closure = {
+    a += 1
+    print("closure = \(a)")
+}
+print("out 1 = \(a)")
+closure()
+print("out 2 = \(a)")
+```
+Result:
+```Swift
+out 1 = 100
+closure = 101
+out 2 = 101
+```
+We can modify the value of the variable in closure directly because closure capture the reference of the variable by default.
+
+### <font size=3 color=#4169E1>**4. Capturing list in closure.**</font>   
+If we capture variable in capturing list in closure, what will happen? Let me see that.
+```Swift
+var a = 100
+let closure = {
+    [a] in
+    print("closure = \(a)")
+}
+a += 1
+print("out 1 = \(a)")
+closure()
+print("out 2 = \(a)")
+```
+Result:
+```Swift
+out 1 = 101
+closure = 100
+out 2 = 101
+```
+At this time if we want to modify 'a' in closure:
+```Swift
+var a = 100
+let closure = {
+    [a] in
+    a += 1
+    print("closure = \(a)")
+}
+a += 1
+print("out 1 = \(a)")
+closure()
+print("out 2 = \(a)")
+```
+It will get an error like that:
+<image src="images/picture1.jpg">
+And this is a tip for us that variable 'a' is an immutable capture now.
