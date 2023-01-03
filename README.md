@@ -1,53 +1,9 @@
 
-## For Swift
-
-### [Swift Tips](https://github.com/Leon0206/Documents/tree/main/Swift/Tips)
-* [Generation of random numbers](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Generation%20of%20random%20numbers.md)
-* [Handling of errors and exceptions](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Handling%20of%20errors%20and%20exceptions.md)
-* [Lazy loading and Anonymous function](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Lazy%20loading%20and%20Anonymous%20function.md)
-* [NSString and String](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/NSString%20and%20String.md)
-* [Set Read-only permission of the property](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Set%20Read-only%20permission%20of%20the%20property.md)
-* [Computed properties and Stored properties](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/Computed%20properties%20and%20Stored%20properties.md)
-* [How to Define a singleton?](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/How%20to%20Define%20a%20singleton%3F.md)
-
-
-
-
-
-### [Enumerations](https://github.com/Leon0206/Documents/tree/main/Swift/Enumerations)
-* [Summary of Enumerations](https://github.com/Leon0206/Documents/blob/main/Swift/Enumerations/Summary%20of%20Enumerations.md)
-* [Recursive Enumeration](https://github.com/Leon0206/Documents/blob/main/Swift/Enumerations/Recursive%20Enumeration.md)
-* [Nested Enumeration](https://github.com/Leon0206/Documents/blob/main/Swift/Enumerations/Nested%20Enumeration.md)
-* [Include Enumeration](https://github.com/Leon0206/Documents/blob/main/Swift/Enumerations/Include%20Enumeration.md)
-
-
-
-### [Structs](https://github.com/Leon0206/Documents/tree/main/Swift/Structs)
-* [Property Defaults and Initialization Constructors](https://github.com/Leon0206/Documents/blob/main/Swift/Structs/Property%20Defaults%20and%20Initialization%20Constructors.md)
-
-
-### [Protocols](https://github.com/Leon0206/Documents/tree/main/Swift/Protocols)
-* [Associatedtype](https://github.com/Leon0206/Documents/blob/main/Swift/Protocols/Associatedtype.md)
-
-
-### [Closures](https://github.com/Leon0206/Documents/tree/main/Swift/Protocols)
-
-
-### [Hybrid Programming](https://github.com/Leon0206/Documents/tree/main/Swift/Hybrid%20Programming)
-* [Call the Macro definition of Objective-C in Swift](https://github.com/Leon0206/Documents/blob/main/Swift/Hybrid%20Programming/Call%20the%20Macro%20definition%20of%20Objective-C%20in%20Swift.md)
-
-
-
-### [Collections](https://github.com/Leon0206/Documents/tree/main/Swift/Collections)
-* [Zip Function](https://github.com/Leon0206/Documents/blob/main/Swift/Collections/Zip%20Function.md)
-  
-
-  
-## For Objective-C
-
-## For iOS
-
-## For Others
-
-
-
+[00.Generation of random numbers.md](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/00.Generation of random numbers.md)
+[01.Handling of errors and exceptions.md](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/01.Handling of errors and exceptions.md)
+[02.Lazy loading and Anonymous function.md](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/02.Lazy loading and Anonymous function.md)
+[03.NSString and String.md](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/03.NSString and String.md)
+[04.Set Read-only permission of the property.md](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/04.Set Read-only permission of the property.md)
+[05.Computed properties and Stored properties.md](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/05.Computed properties and Stored properties.md)
+[06.How to Define a singleton?.md](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/06.How to Define a singleton?.md)
+[07.How to print the memory address of a variable?.md](https://github.com/Leon0206/Documents/blob/main/Swift/Tips/07.How to print the memory address of a variable?.md)
