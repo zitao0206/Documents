@@ -7,8 +7,8 @@
 * [03. NSString and String](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/03.%20NSString%20and%20String.md)   
 * [04. Set Read-only permission of the property](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/04.%20Set%20Read-only%20permission%20of%20the%20property.md)   
 * [05. Computed properties and Stored properties](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/05.%20Computed%20properties%20and%20Stored%20properties.md)   
-* [06. How to Define a singleton?](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/06.%20How%20to%20Define%20a%20singleton?.md)   
-* [07. How to print the memory address of a variable?](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/07.%20How%20to%20print%20the%20memory%20address%20of%20a%20variable?.md)   
+* [06. How to Define a singleton?](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/06.%20How%20to%20Define%20a%20singleton%3F.md)   
+* [07. How to print the memory address of a variable?](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/07.%20How%20to%20print%20the%20memory%20address%20of%20a%20variable%3F.md)   
 
    
 ### [02. Closures](https://github.com/Leon0206/Documents/tree/main/Swift/02.%20Closures)      
@@ -21,7 +21,7 @@
 * [01. Cases of Structures](https://github.com/Leon0206/Documents/blob/main/Swift/03.%20Structs/01.%20Cases%20of%20Structures.md)   
 * [02. Performance Comparison Between Structure and Class](https://github.com/Leon0206/Documents/blob/main/Swift/03.%20Structs/02.%20Performance%20Comparison%20Between%20Structure%20and%20Class.md)   
 * [03. A Case of Initialization Constructor](https://github.com/Leon0206/Documents/blob/main/Swift/03.%20Structs/03.%20A%20Case%20of%20Initialization%20Constructor.md)   
-* [04. Why should we avoid using closures in structs?](https://github.com/Leon0206/Documents/blob/main/Swift/03.%20Structs/04.%20Why%20should%20we%20avoid%20using%20closures%20in%20structs?.md)   
+* [04. Why should we avoid using closures in structs?](https://github.com/Leon0206/Documents/blob/main/Swift/03.%20Structs/04.%20Why%20should%20we%20avoid%20using%20closures%20in%20structs%3F.md)   
 
    
 ### [04. Enumerations](https://github.com/Leon0206/Documents/tree/main/Swift/04.%20Enumerations)      
