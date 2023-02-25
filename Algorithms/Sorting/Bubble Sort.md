@@ -17,13 +17,22 @@ Stable Or Not: Yes
 <strong><font size=3 >3. Implementation</font> </strong>  
 ```Swift 
 func bubbleSorting(_ sourceArray: [Int]) -> [Int] {
+    // 判断数组长度是否大于1，如果不是，则返回原数组
     guard sourceArray.count > 1 else {
         return sourceArray
     }
+    
+    // 将原数组复制一份，避免修改原数组
     var sortedArray = sourceArray
+    
+    // 待排序数组的长度
     let kCount = sortedArray.count
+    
+    // 外层循环，控制循环次数
     for i in 0 ..< kCount {
+        // 内层循环，每次都会将当前最大的元素移动到数组的末尾
         for j in 0 ..< kCount - 1 - i {
+            // 如果前一个元素大于后一个元素，则交换它们的位置
             if sortedArray[j] > sortedArray[j+1] {
                 let tempValue = sortedArray[j]
                 sortedArray[j] = sortedArray[j+1]
@@ -31,8 +40,11 @@ func bubbleSorting(_ sourceArray: [Int]) -> [Int] {
             }
         }
     }
+    
+    // 返回排序后的数组
     return sortedArray
 }
+
 ```
 Execute as follows:
 ```Swift 

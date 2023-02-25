@@ -29,23 +29,35 @@ C(n) = n-1，T(n) = 2 * T(n/2) + n - 1, 同理可得：
 <strong><font size=3 >3. Implementation</font> </strong>  
 ```Swift 
 func mergeSort<T: Comparable> (_ sourceArray: [T]) -> [T] {
+    // 如果数组长度小于等于1，则无需排序，直接返回
     guard sourceArray.count > 1 else {
         return sourceArray
     }
+    
+    // 将数组一分为二
     let kCount = sourceArray.count
     let middleIndex = kCount / 2
     let leftArray = mergeSort(Array(sourceArray[0..<middleIndex]))
     let rightArray = mergeSort(Array(sourceArray[middleIndex..<kCount]))
+    
+    // 合并两个有序数组
     return merge(leftArray, rightArray)
 }
-    
+
+// 合并两个有序数组
 func merge<T: Comparable> (_ leftArray: [T], _ rightArray: [T]) -> [T] {
+    // 左右两个数组的索引值
     var leftIndex = 0
     var rightIndex = 0
+    
+    // 合并后的有序数组
     var mergedArray = [T]()
+    
+    // 左右两个数组的长度
     let leftCount = leftArray.count
     let rightCount = rightArray.count
     
+    // 比较左右两个数组中的元素，将较小的元素放入合并后的数组中
     while leftIndex < leftCount && rightIndex < rightCount {
         if leftArray[leftIndex] < rightArray[rightIndex] {
             mergedArray.append(leftArray[leftIndex])
@@ -55,6 +67,8 @@ func merge<T: Comparable> (_ leftArray: [T], _ rightArray: [T]) -> [T] {
             rightIndex += 1
         }
     }
+    
+    // 将剩余的元素放入合并后的数组中
     return mergedArray + Array(leftArray[leftIndex..<leftCount]) + Array(rightArray[rightIndex..<rightCount])
 }
 ```
