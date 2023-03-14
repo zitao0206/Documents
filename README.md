@@ -52,7 +52,7 @@
 
    
 ### [01. Memory & Performance & Stability](https://github.com/zitao0206/Documents/tree/main/iOS/01.%20Memory%20&%20Performance%20&%20Stability)      
-* [00. Summary of Memory Leak](https://github.com/zitao0206/Documents/blob/main/iOS/01.%20Memory%20&%20Performance%20&%20Stability/00.%20Summary%20of%20Memory%20Leak.md)   
+* [00. Summary of Memory Leak](https://github.com/zitao0206/Documents/blob/main/iOS/01.%20Memory%20%26%20Performance%20%26%20Stability/00.%20Summary%20Of%20Memory%20Leak.md)   
 * [01. Common Crash Scenarios](https://github.com/zitao0206/Documents/blob/main/iOS/01.%20Memory%20&%20Performance%20&%20Stability/01.%20Common%20Crash%20Scenarios.md)   
 
    
