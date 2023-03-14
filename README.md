@@ -1,4 +1,6 @@
    
+<font color=gray size=2>*Note: This catalog is the result of manual execution of the script, and may not be updated in time.*</font>           
+   
 ## For Swift      
 ### [01. Tips](https://github.com/zitao0206/Documents/tree/main/Swift/01.%20Tips)      
 * [00. Generation of random numbers](https://github.com/zitao0206/Documents/blob/main/Swift/01.%20Tips/00.%20Generation%20of%20random%20numbers.md)   
