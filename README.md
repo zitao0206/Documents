@@ -9,6 +9,7 @@
 * [05. Computed properties and Stored properties](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/05.%20Computed%20properties%20and%20Stored%20properties.md)   
 * [06. How to Define a singleton?](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/06.%20How%20to%20Define%20a%20singleton%3F.md)   
 * [07. How to print the memory address of a variable?](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/07.%20How%20to%20print%20the%20memory%20address%20of%20a%20variable%3F.md)   
+* [08. Implicitly Unwrapped Optionals and Force unwrapping](https://github.com/Leon0206/Documents/blob/main/Swift/01.%20Tips/08.%20Implicitly%20Unwrapped%20Optionals%20and%20Force%20unwrapping.md)   
 
    
 ### [02. Closures](https://github.com/Leon0206/Documents/tree/main/Swift/02.%20Closures)      
