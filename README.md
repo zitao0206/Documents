@@ -1,7 +1,11 @@
    
 <font color=gray size=2>*Note: This catalog is the result of manual execution of the script, and may not be updated in time.*</font>           
-   
-## For Swift      
+    
+
+## For Swift
+<details> 
+<summary>Details</summary>
+
 ### [01. Tips](https://github.com/zitao0206/Documents/tree/main/Swift/01.%20Tips)      
 * [00. Generation of random numbers](https://github.com/zitao0206/Documents/blob/main/Swift/01.%20Tips/00.%20Generation%20of%20random%20numbers.md)   
 * [01. Handling of errors and exceptions](https://github.com/zitao0206/Documents/blob/main/Swift/01.%20Tips/01.%20Handling%20of%20errors%20and%20exceptions.md)   
@@ -44,10 +48,24 @@
 
    
 ### [07. Hybrid Programming](https://github.com/zitao0206/Documents/tree/main/Swift/07.%20Hybrid%20Programming)      
-* [00. Call the Macro definition of Objective-C in Swift](https://github.com/zitao0206/Documents/blob/main/Swift/07.%20Hybrid%20Programming/00.%20Call%20the%20Macro%20definition%20of%20Objective-C%20in%20Swift.md)   
+* [00. Call the Macro definition of Objective-C in Swift](https://github.com/zitao0206/Documents/blob/main/Swift/07.%20Hybrid%20Programming/00.%20Call%20the%20Macro%20definition%20of%20Objective-C%20in%20Swift.md)  
 
-   
-## For iOS      
+</details>    
+
+
+
+## For SwiftUI
+<details> 
+<summary>Details</summary>
+
+
+</details> 
+
+
+## For iOS
+<details> 
+<summary>Details</summary>
+
 ### [00. Architecture & Design](https://github.com/zitao0206/Documents/tree/main/iOS/00.%20Architecture%20&%20Design)      
 
    
@@ -56,7 +74,7 @@
 * [01. Common Crash Scenarios](https://github.com/zitao0206/Documents/blob/main/iOS/01.%20Memory%20&%20Performance%20&%20Stability/01.%20Common%20Crash%20Scenarios.md)   
 
    
-### [02. Graphics & images](https://github.com/zitao0206/Documents/tree/main/iOS/02.%20Graphics%20&%20images)      
+### [02. Graphics & Images](https://github.com/zitao0206/Documents/tree/main/iOS/02.%20Graphics%20&%20images)      
 
    
 ### [03. Tools & Configurations](https://github.com/zitao0206/Documents/tree/main/iOS/03.%20Tools%20&%20Configurations)      
@@ -65,3 +83,13 @@
 ### [04. Others](https://github.com/zitao0206/Documents/tree/main/iOS/04.%20Others)      
 * [00. Difference Of nil in OC and nil in Swift](https://github.com/zitao0206/Documents/blob/main/iOS/04.%20Others/00.%20Difference%20Of%20nil%20in%20OC%20and%20nil%20in%20Swift.md)   
 
+
+
+</details> 
+
+## For Others
+<details> 
+<summary>Details</summary>
+
+
+</details> 
