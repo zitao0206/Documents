@@ -13,6 +13,9 @@
 
 <strong>**<font size=3>1.3 宁波</font>**  </strong>
 
+
+<image src="images/image00.jpg">    
+
 <strong> Example Code </strong>
 ```Swift 
 let faceCount = 6
